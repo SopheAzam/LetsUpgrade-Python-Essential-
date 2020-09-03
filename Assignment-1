@@ -1,0 +1,64 @@
+##1.list and its default functions
+append()
+      ->adds an element at the end of the list.
+clear()
+      ->removes all the elements from the list.
+insert()
+      ->adds an element at the specified position.
+copy()
+      ->returns a copy of the list.
+remove()
+      ->removes the particular element in the list.
+
+##2.dictionaries and its default functions
+    get()
+        ->returns the value of the specified key.\n",
+    keys()
+        ->returns a list containing the dictionaries keys.\n",
+    clear()
+        ->removes all elements from the dictionary.\n",
+    update()
+        ->updates the dictionary with the specified key-value pairs.\n",
+    values()\n
+        ->returns a list of all the values in the dictionary."
+
+##3.sets and its default functions.
+add()
+    ->adds an element to the set.
+clear()
+    ->removes all the elements from the set.
+pop()
+    ->removes and returns an arbitary set element.Raises KeyError if the set is empty.
+remove()
+    ->removes an element from the set.Raises KeyError if the set is empty.
+update()
+    ->update the set with the union of this set and others.
+    
+
+##4.tuple and its default methods.
+count()
+    ->returns the number of a times a specified value occurs in a tuple.
+index()
+    ->searches the tuple for a specified value and returns the position of where it was found.
+
+    ***the above two methods are only used by tuple object can call.
+
+len()
+    ->prints the length of the tuple.
+del
+    ->this keyword deletes the tuple we have created.
+    
+    
+
+##5.Strings and its default methods.
+isalpha()
+    ->this method checks whether the string consists of alphabetic characters only.
+isalnum()
+    ->this method checks whether the string consists of alphanumeric characters or not.
+find()
+    ->this methods returns the index value of the character,otherwise prints -1.
+swapcase()
+    ->this method returns a copy of the string in which all the case-based characters have had their case swapped.
+in
+    ->this method returns True if the string contains the substring.
+    
