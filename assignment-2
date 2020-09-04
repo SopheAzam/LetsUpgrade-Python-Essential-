@@ -1,0 +1,26 @@
+
+
+FIRST ANSWER {1}
+# I'm A PILOT
+  distance=eval(input("enter your distance:"))
+  if distance > 5000:
+      print("Turn Around")
+  elif 1000 < distance < 5000:
+      print("Bring down to 1000")
+  else:
+      print("Safe to Land")
+
+
+
+
+
+
+SECOND ANSWER{2}
+# PRIME NUMBERS FROM (1-200)
+  for i in range(1,201):
+      count=0
+      for j in range(1,i+1):
+          if(i%j==0):
+              count=count+1
+      if(count==2):        
+          print(i)
