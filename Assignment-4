@@ -1,0 +1,51 @@
+# LetsUpgrade-Python-Essentials
+#####################
+1ST QUESTION:-
+
+list1=[1,5,6,4,1,2,3,5]
+list2=[5,6,2,3,6]
+checklist=[1,1,5]
+print("given list1 and list2: ")
+print("list1 :" +str(list1))
+print("sublist :" +str(checklist))
+flag1=0
+flag2=0
+if(set(checklist).issubset(set(list1))):
+    flag1=1
+if(flag1):
+    print("it's a Match ")
+else:
+    print("it's Gone ")
+print("list2 :" +str(list2))
+print("sublist :" +str(checklist))
+if(set(checklist).issubset(set(list2))):
+    flag2=1
+if(flag2):
+    print("it's a Match ")
+else:
+    print("it's Gone ")
+    
+    
+ ##################
+ 2ND QUESTION:-
+ 
+def isprime(x):
+    for n in range(2,x):
+        if x%n == 0:
+            return False
+            else:
+            return True
+fltrobj=filter(isprime,range(2500))
+print('prime numbers between 1 to 2500: ')
+print(list(fltrobj),end="")
+
+
+###################
+3RD QUESTION:-
+input=["hey i am  sai", "i am in mumbai"]
+l=str(input)
+print(l.title())
+
+
+
+
