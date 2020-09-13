@@ -1,0 +1,34 @@
+# LetsUpgrade-Python-Essentials
+###############################
+
+fp=open("new.txt","w")
+fp.close()
+fp=open("new.txt","r")
+try:
+    fp.write("hello world")
+except IOError as err:
+    print('error regarding the operation on file is:"',err,'"')
+    
+    
+ error regarding the operation on file is:" not writable "
+ 
+ 
+################################
+def upper_d(func):
+  def inner():
+    str1=func()
+    return str1.upper
+  return inner
+def split_d(func):
+  def outer():
+    str2=func()
+    return str2.split()
+  return outer
+@split_d
+@upper-d
+def overall():
+  return" shaik sophe azam "
+print(overall())
+
+
+###################################
