@@ -1,0 +1,77 @@
+# LetsUpgrade-Python-Essentials
+class bank_name():
+    def __init__(self,owner_name,balance):
+        self.owner_name=owner_name
+        self.balance=balance
+    def deposit(self,add):
+        print("the owner name is:",self.owner_name)
+        print("the amount before deposition:",self.balance)
+        self.balance+=add
+        print("amount to be deposited is:",add)
+        print("the amount after deposition:", self.balance)
+        
+    def withdraw(self,remove):
+        print("the owner name is:",self.owner_name)
+        if remove>self.balance:
+            print("not having enough!!!")
+        else:
+            print("the withdrawn amount is :",remove)
+            self.balance-=remove
+            print("the remaining balance is: ",self.balance)
+           
+            
+        
+get=bank_name("SSA",10000)
+get.deposit(4567)
+get.withdraw(1009)
+get.withdraw(100000)
+
+
+the owner name is: SSA
+the amount before deposition: 10000
+amount to be deposited is: 4567
+the amount after deposition: 14567
+the owner name is:SSA
+the withdrawn amount is : 1009
+the remaining balance is:  13558
+the owner name is: SSA
+not having enough!!!
+
+
+
+
+
+class cone():
+    def __init__(self,radius,height):
+        self.radius=radius
+        self.height=height
+        
+    def volume(self):
+        vol=3.14*(self.radius**2)*(self.height/3)
+        print("TO FIND VOLUME OF THE CONE")
+        print("the radius of the cone is:" , self.radius)
+        print("the height of the cone is:" , self.height)
+        print("the volume of the cone is:",round(vol))
+      
+        
+    def sarea(self):
+        surface_area=3.14*(self.radius**2)
+        print("TO FIND SURFACE AREA OF THE CONE")
+        print("the radius of the cone is:" , self.radius)
+        print("the height of the cone is:" , self.height)
+        print("the surface area of the cone is: ",surface_area)
+        
+        
+get=cone(10,20)
+get.volume()
+get.sarea()
+
+    
+TO FIND VOLUME OF THE CONE
+the radius of the cone is: 10
+the height of the cone is: 20
+the volume of the cone is: 2093
+TO FIND SURFACE AREA OF THE CONE
+the radius of the cone is: 10
+the height of the cone is: 20
+the surface area of the cone is:  314.0
